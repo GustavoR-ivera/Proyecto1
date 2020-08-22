@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Adolfo Rivera Blanco">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head> 
+
+<body>
+
+    <img src="imagenes/logo1.jpg" class="logo">
+    <div>
+        <header>
+            <h1> Mi Primera Página Web </h1>
+            
+        </header>
+        
+            
+        <!-- lista sin orden anidada con listas con orden-->
+            
+        <nav>
+            <ul>
+                <li> <a href="#" > Inicio </a> </li>
+                <li>  <a href="#"> Grupos  </a> 
+                        <ul>
+                            <li><a href="#">Mis grupos</a></li>
+                            <li><a href="#">Buscar grupos</a></li>
+                            
+                        </ul>
+                </li>
+            
+                <li><a href="#">modificar grupos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Mas informacion</a>
+                    <ul>
+                        <li><a href="#">quienes somos?</a></li>
+                        <li><a href="#">contactanos</a></li>
+                        <li> <a href="https://www.facebook.com/" title="quiere ir a mi fb perrito?" target="_blank"> ir a facebook </a> </li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        
+        
+        <!--formularios con atributos
+        <select id="desplegable">
+            <optgroup label="Cardinales">
+                <option value="Primero">
+                    Primero
+                </option>
+                <option value="Segundo">
+                    Segundo
+                </option>
+                <option value="Tercero">
+                    Tercero
+                </option>
+                <option value="cuarto">
+                    cuarto
+                </option>
+                <option value="quinto">
+                    quinto
+                </option>
+            </optgroup>
+        </select>
+        
+        <select multiple="multiple" id="deslizable">
+            <optgroup label="CARDINALES">
+                <option value="Primero">
+                    Primero
+                </option>
+                <option value="Segundo">
+                    Segundo
+                </option>
+                <option value="Tercero">
+                    Tercero
+                </option>
+                <option value="cuarto">
+                    cuarto
+                </option>
+                <option value="quinto">
+                    quinto
+                </option>
+                <option value="Segundo">
+                    Segundo
+                </option>
+                <option value="Segundo">
+                    Segundo
+                </option>
+            </optgroup>
+        </select> -->
+        
+        <!--cuadro de texto <textarea  cols="30" rows="10">  </textarea> -->
+        
+        
+        <!--agrupa info relacionada-->
+        
+        <aside>
+            <fieldset>
+                <form id="iniciarsesion" class="formulario">
+                    <fieldset >
+                        <legend> Log In </legend> 
+                         <input type="text" maxlength="15" size="20" placeholder="User" required  autocomplete> <br>
+                         <input type="password" maxlength="15" size="20" placeholder="Password" title="Debe contener 3 letras minúsculas y 2 números" pattern="[a-z]{3}[0-9]{2}" required> <br>
+                        <input type="submit" value="Log In" id="boton1">
+                    </fieldset>
+                </form> <br>
+        
+                <form id="registrarse" class="formulario">
+                    <fieldset>
+                        <legend> Register </legend>
+        
+                        <input type="text" name="nombres" id="nombres" placeholder="First name" maxlength="20" required autocomplete> <input type="text" name="apellidos" id="apellidos" placeholder="Last name" maxlength="20" required autocomplete> <br>
+        
+                        <input type="email" name="correo" id="correo" placeholder="Email" title="alguien@algo.com" required autocomplete> <input type="tel" name="telefono" id="telefono" placeholder="Phone number" required autocomplete> <br>
+        
+                        <input type="password" name="contraseña" id="contraseña" maxlength="5" pattern="[a-z]{3}[0-9]{2}" placeholder="Password" title="Password ex: (Debe contener 3 letras y 2 números en ese orden)" required>  <br>
+        
+                        Birthday: <input type="date" name="cumpleaños" id="cumpleaños" placeholder="Birthday" required > Male <input type="checkbox"> Female <input type="checkbox"> other <input type="text" placeholder="What are you?"> <br>
+        
+                        <input type="submit" value="Sign up">
+        
+                    </fieldset>
+                </form>
+            </fieldset>
+        </aside>
+        
+        <!-- fff 
+        <fieldset>
+            <legend>Inserta tu respuesta a la pregunta</legend>
+        
+            <label for="opcionA"> opcion A </label> 
+            <input type="radio" name="opcionA" id="opcionA">
+        
+            opcion B <input type="radio">
+            opcion C <input type="radio">
+        </fieldset> 
+         -->
+
+        <!-- probando diferentes atributos de etiqueta input
+        <input type="button" value="Inserta tu imagen">
+        <input type="file">
+        <input type="submit"> 
+        <input type="image" src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+        <input type="reset" value="Cancelar"> 
+        
+        selecciona tu rango de edad: <input type="range" min="2" max="17" value="3"> <br>
+        selecciona un numero: <input type="number" min="2" max="14" value="3">
+        Elige un maldito color: <input type="color"> <br>
+        Buscar algo: <input type="search" autocomplete="on" > <br>
+        Selecciona la fecha imbecil: <input type="datetime-local">
+        Otra fecha: <input type="date"> -->
+        
+            <section class="paginaprincipal">
+            
+                <h1> Página Principal</h1> 
+
+                <textarea name="texto" id="texto" cols="60" rows="7" placeholder=" What are you thinking?" autofocus ></textarea>
+
+
+                <ul class="multimedia">
+                    <li>videos en directo</li>
+                    <li>Fotos</li>
+                    <li>Actividades</li>
+                </ul>
+
+                <fieldset class="contenidoblock">
+                    <article>
+                        <img src="imagenes/foto.jpg"> <h2 class="nombreusuario" id="nombreusuario">Usuario -> Grupo </h2> <br>
+    
+                        <time datetime="día-mes-año"> día-mes-año </time>
+    
+                        <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum ea pariatur eaque eius id, nesciunt ut ad at odit neque corrupti error consequatur quaerat distinctio, exercitationem facere voluptate tenetur. {} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore vero odio a tenetur voluptates ratione vel atque? Qui ullam voluptate facilis architecto est velit ipsa itaque quibusdam libero natus. </p>
+    
+                        <footer>  
+                            <input type="button" value="Me gusta" class="reacciones">
+                            <input type="button" value="Comentar" class="reacciones">
+                            <input type="button" value="Compartir" class="reacciones">
+                        </footer>
+    
+                    </article> <br>
+                </fieldset>
+
+
+                <fieldset class="contenidoblock">
+                    <article >
+                        <img src="imagenes/foto.jpg"> <h2 class="nombreusuario" id="nombreusuario">Usuario -> Grupo </h2> <br>
+    
+                        <time datetime="día-mes-año"> día-mes-año </time>
+    
+                        <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum ea pariatur eaque eius id, nesciunt ut ad at odit neque corrupti error consequatur quaerat distinctio, exercitationem facere voluptate tenetur. {} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore vero odio a tenetur voluptates ratione vel atque? Qui ullam voluptate facilis architecto est velit ipsa itaque quibusdam libero natus. </p>
+    
+                        <footer>  
+                            <input type="button" value="Me gusta" class="reacciones">
+                            <input type="button" value="Comentar" class="reacciones">
+                            <input type="button" value="Compartir" class="reacciones">
+                        </footer>
+    
+                    </article> <br>
+                </fieldset>
+
+
+                <fieldset class="contenidoblock">
+                    <article >
+                        <img src="imagenes/foto.jpg"> <h2 class="nombreusuario" id="nombreusuario">Usuario -> Grupo </h2> <br>
+    
+                        <time datetime="día-mes-año"> día-mes-año </time>
+    
+                        <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum ea pariatur eaque eius id, nesciunt ut ad at odit neque corrupti error consequatur quaerat distinctio, exercitationem facere voluptate tenetur. {} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore vero odio a tenetur voluptates ratione vel atque? Qui ullam voluptate facilis architecto est velit ipsa itaque quibusdam libero natus. </p>
+    
+                        <footer>  
+                            <input type="button" value="Me gusta" class="reacciones">
+                            <input type="button" value="Comentar" class="reacciones">
+                            <input type="button" value="Compartir" class="reacciones">
+                        </footer>
+    
+                    </article> <br>
+                </fieldset>
+
+
+
+            </section>
+         
+
+        
+        
+        
+        <!--tablas
+        
+        <table id="tabla1">
+            <caption>Factura de Venta</caption>
+            
+            <thead>
+                <tr>
+                    <td>Código</td> <td>Producto</td> <td>valor unitario</td> <td>cantidad</td>
+                </tr>
+            </thead>
+               
+            <tbody>
+                <tr>
+                    <td>123</td> <td> arroz</td> <td>9500</td> <td>5</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>total: 47.500</td> 
+                </tr>
+            </tfoot>
+        </table> -->
+        
+    </div>
+
+
+</body>
+
+</html>
+
+
